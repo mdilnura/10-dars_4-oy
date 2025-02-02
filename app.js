@@ -106,8 +106,7 @@ Natija: 5 7 9 toqlar soni = 3*/
 Massiv elementlar: 4 5 7 8 6 9
 Natija: 4 8 6 9 7 5*/
 // function numer(arr) {
-//   let son1 = arr
-//     .filter(function (num) {
+//   let son1 = arr.filter(function (num) {
 //       return num % 2 !== 0;
 //     })
 //     .reverse();
@@ -119,16 +118,51 @@ Natija: 4 8 6 9 7 5*/
 
 // numer([4, 5, 7, 8, 6, 9]);
 /*Array6. n ta elementdan tashkil topgan massiv berilgan (n juft son). Massiv elementlari orasidan quyidagilarini chiqaruvchi programma tuzilsin. A[0], A[2], A[4], ... Shart operatori ishlatilmasin.*/
-
+// function numer(arr) {
+//   let juft = arr.filter(function (num, index) {
+//     return index % 2 === 0;
+//   });
+//   console.log("juftlar:", juft);
+// }
+// numer([4, 5, 7, 8, 6, 9]);
 /*
-Array7. n ta elementdan tashkil topgan massiv berilgan (n juft son). Massiv elementlari orasidan quyidagilarini chiqaruvchi programma tuzilsin. A[n-1], A[n-3], ... A[1]. Shart operatori ishlatilmasin.
+Array7. n ta elementdan tashkil topgan massiv berilgan (n juft son). Massiv elementlari orasidan quyidagilarini chiqaruvchi programma tuzilsin. A[n-1], A[n-3], ... A[1]. Shart operatori ishlatilmasin.*/
+// function numer(arr) {
+//   let n = arr.length;
+//   for (let i = n - 1; i >= 0; i = i - 2) {
+//     console.log(arr[i]);
+//   }
+// }
+// numer([4, 5, 7, 8, 6, 9, 5, 7, 3, 8]);
 
-Array8. n ta elementdan tashkil topgan massiv berilgan. Dastlab massiv elementlari orasidan juft indekslilarini keyin toq indekslilarini chiqaruvchi programma tuzilsin.
-A[0], A[2], A[4], ... A[1], A[3], A[5],.... Shart operatori ishlatilmasin.
-
-Array9. n ta elementdan tashkil topgan massiv berilgan (n juft son). Dastlab massiv elementlari orasidan toq indekslilarini o'shish tartibida keyin juft indekslilarini kamayish tartibida chiqaruvchi programma tuzilsin. A[1], A[3], A[5],.. A[6], A[4], A[2], A[0]. Shart operatori ishlatilmasin.
-
-Array10. n ta elementdan tashkil topgan massiv berilgan. Massiv elementlarini quyidagicha chiqaruvchi programma tuzilsin. A[0], A[1], A[n-1], A[n-2], A[2], A[3], A[n-3], A[n-4], ...
+/*Array8. n ta elementdan tashkil topgan massiv berilgan. Dastlab massiv elementlari orasidan juft indekslilarini keyin toq indekslilarini chiqaruvchi programma tuzilsin.
+A[0], A[2], A[4], ... A[1], A[3], A[5],.... Shart operatori ishlatilmasin.*/
+// function numer(arr) {
+//   let juft = arr.filter(function (num, index) {
+//     return index % 2 === 0;
+//   });
+//   console.log("juftlar:", juft);
+//   let toq = arr.filter(function (num, index) {
+//     return index % 2 !== 0;
+//   });
+//   console.log("toqlar:", toq);
+// }
+// numer([2, 5, 7, 2, 5, 7, 39]);
+/*Array9. n ta elementdan tashkil topgan massiv berilgan (n juft son). Dastlab massiv elementlari orasidan toq indekslilarini o'shish tartibida keyin juft indekslilarini kamayish tartibida chiqaruvchi programma tuzilsin. A[1], A[3], A[5],.. A[6], A[4], A[2], A[0]. Shart operatori ishlatilmasin.*/
+// function numer(arr) {
+//   let toq = arr.filter(function (_, index) {
+//     return index % 2 !== 0;
+//   });
+//   console.log("toq:", toq);
+//   let juft = arr
+//     .filter(function (_, index) {
+//       return index % 2 === 0;
+//     })
+//     .reverse();
+//   console.log("juftlar:", juft);
+// }
+// numer([2, 7, 5, 3, 9, 4]);
+/*Array10. n ta elementdan tashkil topgan massiv berilgan. Massiv elementlarini quyidagicha chiqaruvchi programma tuzilsin. A[0], A[1], A[n-1], A[n-2], A[2], A[3], A[n-3], A[n-4], ...
 
 Array11. N ta elementdan tashkil topgan arr nomli massiv va K, L butun sonlari berilgan. (0 <= K <= L < N). Massivning K va L indekslari orasidagi elementlaridan tashqari elementlari yig'indisini qaytaruvchi rangeOutSum(arr) nomli funksiya tuzilsin.
 
